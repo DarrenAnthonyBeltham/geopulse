@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GeoPulse - Your ultimate travel intelligence platform. Plan trips, check visas, track expenses, and explore the world with real-time data.">
+    <meta name="theme-color" content="#0EA5E9">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>GeoPulse | The Ultimate Travel Companion</title>
+
+    <style>
+      body { margin: 0; padding: 0; background-color: #F8FAFC; }
+      #app-loading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Inter', sans-serif;
+      }
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid #E0F2FE;
+        border-top: 4px solid #0EA5E9;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+      .loading-text {
+        color: #0F172A;
+        font-weight: 600;
+        letter-spacing: 1px;
+        animation: pulse 1.5s infinite;
+      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="app-loading">
+        <div class="spinner"></div>
+        <div class="loading-text">GEOPULSE</div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
