@@ -1,6 +1,6 @@
 # 🌍 GeoPulse - The Ultimate Travel Intelligence Platform
 
-> **Live Demo:** [Insert Your Vercel/Netlify Link Here]
+> **Live Demo:** https://geopulse-travel.vercel.app/
 
 GeoPulse is a modern, serverless "Super App" for travelers. It aggregates real-time data from 7+ different public APIs to provide a comprehensive dashboard for trip planning, budgeting, and exploration. 
 
