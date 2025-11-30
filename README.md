@@ -1,42 +1,56 @@
-# geopulse
+# 🌍 GeoPulse - The Ultimate Travel Intelligence Platform
 
-This template should help get you started developing with Vue 3 in Vite.
+> **Live Demo:** https://geopulse-travel.vercel.app/
 
-## Recommended IDE Setup
+GeoPulse is a modern, serverless "Super App" for travelers. It aggregates real-time data from 7+ different public APIs to provide a comprehensive dashboard for trip planning, budgeting, and exploration. 
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+I built this project to demonstrate how a complex, feature-rich application can be engineered using **Vue 3** and modern frontend architecture without the need for a heavy backend database.
 
-## Recommended Browser Setup
+## 🚀 The Goal
+The goal was to create a travel tool that feels "Elite" — focusing heavily on **User Experience (UX)**, smooth **Micro-interactions**, and **Data Visualization**. It solves real travel pain points: "Do I need a visa?", "What is the currency rate?", "Is it safe?", and "What should I pack?".
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## ✨ Key Features
 
-## Type Support for `.vue` Imports in TS
+### 🧭 Command Center (Home)
+* **Real-time Search:** Filter countries by region or name instantly.
+* **Smart Sorting:** Sort destinations by Population or Name.
+* **"Feeling Lucky":** A gamified randomizer to discover new places.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### 📊 Country Intelligence
+* **Live Dashboard:** Real-time Weather (OpenMeteo), Currency Rates (Frankfurter), and Local Time.
+* **Interactive Maps:** Embedded Google Maps & Transport PDF downloads.
+* **Cultural Insights:** Tipping etiquette, Power plug guides, and Safety Index scores.
+* **Smart Visa Checker:** Simulates entry requirements based on your passport.
 
-## Customize configuration
+### 🤖 AI & Tools
+* **AI Trip Planner:** Generates detailed 3-10 day itineraries with specific morning/afternoon/evening activities based on budget and city.
+* **Financial Tools:** "Big Mac" Cost of Living index & Currency Calculator.
+* **Travel Journal:** A persistent diary (saved to LocalStorage) to record memories.
+* **Phrasebook:** Text-to-Speech audio guide for essential local phrases.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### 🛠️ Technical Highlights
+* **Architecture:** Vue 3 (Composition API) + Vite.
+* **State Management:** Pinia (for Auth, Favorites, and Journal persistence).
+* **Styling:** Bootstrap 5 with a custom "Glassmorphism" CSS engine and Dark Mode.
+* **Performance:** Staggered animations, Skeleton loading states, and Lazy routing.
+* **Serverless:** 100% frontend-based. All user data is persisted via Browser LocalStorage.
 
-## Project Setup
+## 🧰 Tech Stack
 
-```sh
-npm install
-```
+| Category | Technology |
+| :--- | :--- |
+| **Framework** | Vue.js 3 (TypeScript) |
+| **Build Tool** | Vite |
+| **State** | Pinia |
+| **Routing** | Vue Router |
+| **HTTP Client** | Axios |
+| **Styling** | Bootstrap 5 + Custom CSS Variables |
+| **Icons** | Bootstrap Icons (BI) |
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## 🔌 APIs Integrated
+* **REST Countries:** Core geographic data.
+* **Open-Meteo:** Live weather forecasts.
+* **Frankfurter:** Currency exchange rates.
+* **Nager.Date:** Public holiday calendars.
+* **Ticketmaster:** Live event discovery.
+* **Google Flights/Booking:** Deep linking for reservations.
